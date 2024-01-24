@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Style the entire form using the element selector */
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Style the form header using the id selector */
+        #form-header {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Style the form labels using the class selector */
+        .form-label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Style the form input fields using the class selector */
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        /* Style the submit button using the id selector */
+        #submit-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /* Style the submit button on hover using the id selector */
+        #submit-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2 id="form-header">Student Registration Form</h2>
+        <label for="name" class="form-label">Full Name:</label>
+        <input type="text" id="name" class="form-input" required>
+
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" id="email" class="form-input" required>
+
+        <label for="birthdate" class="form-label">Date of Birth:</label>
+        <input type="date" id="birthdate" class="form-input" required>
+
+        <label for="gender" class="form-label">Gender:</label>
+        <select id="gender" class="form-input">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="address" class="form-label">Address:</label>
+        <textarea id="address" class="form-input" rows="3"></textarea>
+
+        <input type="submit" id="submit-button" value="Submit">
+    </form>
+</body>
+</html>
